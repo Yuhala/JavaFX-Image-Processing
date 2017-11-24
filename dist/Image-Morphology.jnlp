@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Image-Morphology.jnlp">
+  <information>
+    <title>Image-Morphology</title>
+    <vendor>peterson</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Image-Morphology.jar" size="13088" download="eager" />
+    <jar href="lib/fontawesomefx-8.8.jar" size="443326" download="eager" />
+    <jar href="lib/jfoenix-1.9.1.jar" size="2384613" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Image-Morphology" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="image.morphology.ImageMorphology"  name="Image-Morphology" />
+  <update check="always"/>
+</jnlp>

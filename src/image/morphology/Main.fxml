@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="925.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="image.morphology.MainController">
+   <children>
+      <AnchorPane layoutY="50.0" prefHeight="584.0" prefWidth="223.0" style="-fx-background-color: #595D6C;">
+         <children>
+            <JFXButton fx:id="btn_bina" accessibleText="BINA" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="22.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Binarisation" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_eros" accessibleText="EROS" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="54.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Erosion" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_dila" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="83.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Dilation" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_open" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="113.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Opening" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_close" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="144.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Closing" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_skele" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="173.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Skeletisation" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_wth" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="204.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="White Top Hat" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_bth" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="236.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Black Top Hat" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_mcq" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="267.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="MCQs" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_test" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="1.0" layoutY="300.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="222.0" ripplerFill="#8aa19b" text="Knowledge Tests" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="TH" />
+               </graphic>
+            </JFXButton>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="39.0" prefWidth="952.0" style="-fx-background-color: #595D6C;">
+         <children>
+            <Label alignment="BASELINE_LEFT" layoutX="62.0" layoutY="17.0" prefHeight="16.0" prefWidth="103.0" text="Operations" textFill="#f8f4f4">
+               <font>
+                  <Font name="Baekmuk Headline" size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#f2eeee" glyphName="BARS" layoutX="208.0" layoutY="30.0" size="16" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="QUESTION" layoutX="840.0" layoutY="30.0" size="16" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="CLOSE" layoutX="892.0" layoutY="30.0" onMouseClicked="#quit" size="16" />
+            <Label alignment="BASELINE_LEFT" layoutX="300.0" layoutY="17.0" prefHeight="16.0" prefWidth="103.0" text="Home" textFill="#f8f4f4">
+               <font>
+                  <Font name="Baekmuk Headline" size="15.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#f2eeee" glyphName="HOME" layoutX="277.0" layoutY="31.0" size="16" />
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="#595d6c" glyphName="SORT_ASC" layoutX="98.0" layoutY="58.0" size="18" />
+      <AnchorPane fx:id="h_eros" layoutX="225.0" layoutY="48.0" prefHeight="564.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="16.0" prefWidth="114.0" text="Erosion">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXSlider fx:id="eros_level1" layoutX="165.0" layoutY="91.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="91.0" prefHeight="16.0" prefWidth="83.0" text="Level 1" />
+            <JFXSlider fx:id="eros_level2" layoutX="165.0" layoutY="120.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="eros_choose" layoutX="73.0" layoutY="186.0" onAction="#choosePhoto" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton fx:id="eros_op" layoutX="72.0" layoutY="499.0" onAction="#processImage" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Erode" textFill="#eeeaea" />
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture" />
+            <JFXButton fx:id="eros_save" layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <Label layoutX="494.0" layoutY="57.0" prefHeight="31.0" prefWidth="114.0" text="Bourage" />
+            <JFXRadioButton fx:id="eros_zeroes" layoutX="478.0" layoutY="91.0" text="With Zeroes" textFill="#252424" />
+            <JFXRadioButton fx:id="eros_sym" layoutX="478.0" layoutY="118.0" text="Symetric" textFill="#252424" />
+            <JFXRadioButton fx:id="eros_csym" layoutX="478.0" layoutY="145.0" text="Circular Symetric " textFill="#252424" />
+            <Label layoutX="493.0" layoutY="163.0" prefHeight="31.0" prefWidth="143.0" text="Structuring Element">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="194.0" prefHeight="16.0" prefWidth="42.0" text="Order" />
+            <JFXSlider fx:id="eros_order" layoutX="538.0" layoutY="195.0" max="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_dila" layoutX="224.0" layoutY="51.0" prefHeight="564.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="16.0" prefWidth="114.0" text="Dilation">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXSlider layoutX="165.0" layoutY="91.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="91.0" prefHeight="16.0" prefWidth="83.0" text="Level 1" />
+            <JFXSlider layoutX="165.0" layoutY="120.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="73.0" layoutY="186.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Dilate" textFill="#eeeaea" />
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture" />
+            <JFXButton layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <Label layoutX="494.0" layoutY="57.0" prefHeight="31.0" prefWidth="114.0" text="Bourage" />
+            <JFXRadioButton layoutX="478.0" layoutY="91.0" text="With Zeroes" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="118.0" text="Symetric" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="145.0" text="Circular Symetric " textFill="#252424" />
+            <Label layoutX="493.0" layoutY="163.0" prefHeight="31.0" prefWidth="143.0" text="Structuring Element">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="194.0" prefHeight="16.0" prefWidth="42.0" text="Order" />
+            <JFXSlider layoutX="538.0" layoutY="195.0" max="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_open" layoutX="225.0" layoutY="49.0" prefHeight="564.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="16.0" prefWidth="114.0" text="Opening">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXSlider layoutX="165.0" layoutY="91.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="91.0" prefHeight="16.0" prefWidth="83.0" text="Level 1" />
+            <JFXSlider layoutX="165.0" layoutY="120.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="73.0" layoutY="186.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Open" textFill="#eeeaea" />
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture" />
+            <JFXButton layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <Label layoutX="494.0" layoutY="57.0" prefHeight="31.0" prefWidth="114.0" text="Bourage" />
+            <JFXRadioButton layoutX="478.0" layoutY="91.0" text="With Zeroes" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="118.0" text="Symetric" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="145.0" text="Circular Symetric " textFill="#252424" />
+            <Label layoutX="493.0" layoutY="163.0" prefHeight="31.0" prefWidth="143.0" text="Structuring Element">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="194.0" prefHeight="16.0" prefWidth="42.0" text="Order" />
+            <JFXSlider layoutX="538.0" layoutY="195.0" max="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_close" layoutX="223.0" layoutY="52.0" prefHeight="564.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="16.0" prefWidth="114.0" text="Closing">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXSlider layoutX="165.0" layoutY="91.0" prefHeight="16.0" prefWidth="300.0" />
+            <JFXSlider layoutX="165.0" layoutY="120.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="73.0" layoutY="186.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Close" textFill="#eeeaea" />
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture" />
+            <JFXButton layoutX="405.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <Label layoutX="494.0" layoutY="57.0" prefHeight="31.0" prefWidth="114.0" text="Bourage" />
+            <JFXRadioButton layoutX="478.0" layoutY="91.0" text="With Zeroes" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="118.0" text="Symetric" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="145.0" text="Circular Symetric " textFill="#252424" />
+            <Label layoutX="493.0" layoutY="163.0" prefHeight="31.0" prefWidth="143.0" text="Structuring Element">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="194.0" prefHeight="16.0" prefWidth="42.0" text="Order" />
+            <JFXSlider layoutX="538.0" layoutY="195.0" max="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_wth" layoutX="225.0" layoutY="50.0" prefHeight="564.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="19.0" prefWidth="131.0" text="White Top Hat">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXSlider layoutX="165.0" layoutY="91.0" prefHeight="16.0" prefWidth="300.0" />
+            <JFXSlider layoutX="165.0" layoutY="120.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="73.0" layoutY="186.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="WTH" textFill="#eeeaea" />
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture" />
+            <JFXButton layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <Label layoutX="494.0" layoutY="57.0" prefHeight="31.0" prefWidth="114.0" text="Bourage" />
+            <JFXRadioButton layoutX="478.0" layoutY="91.0" text="With Zeroes" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="118.0" text="Symetric" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="145.0" text="Circular Symetric " textFill="#252424" />
+            <Label layoutX="493.0" layoutY="163.0" prefHeight="31.0" prefWidth="143.0" text="Structuring Element">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="194.0" prefHeight="16.0" prefWidth="42.0" text="Order" />
+            <JFXSlider layoutX="538.0" layoutY="195.0" max="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_bth" layoutX="223.0" layoutY="52.0" prefHeight="564.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="19.0" prefWidth="131.0" text="Black Top Hat">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXSlider layoutX="165.0" layoutY="91.0" prefHeight="16.0" prefWidth="300.0" />
+            <JFXSlider layoutX="165.0" layoutY="120.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="73.0" layoutY="186.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="BTH" textFill="#eeeaea" />
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture" />
+            <JFXButton layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <Label layoutX="494.0" layoutY="57.0" prefHeight="31.0" prefWidth="114.0" text="Bourage" />
+            <JFXRadioButton layoutX="478.0" layoutY="91.0" text="With Zeroes" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="118.0" text="Symetric" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="145.0" text="Circular Symetric " textFill="#252424" />
+            <Label layoutX="493.0" layoutY="163.0" prefHeight="31.0" prefWidth="143.0" text="Structuring Element">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="194.0" prefHeight="16.0" prefWidth="42.0" text="Order" />
+            <JFXSlider layoutX="538.0" layoutY="195.0" max="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_skele" layoutX="224.0" layoutY="50.0" prefHeight="564.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="19.0" prefWidth="131.0" text="Skeletisation">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXSlider layoutX="165.0" layoutY="91.0" prefHeight="16.0" prefWidth="300.0" />
+            <JFXSlider layoutX="165.0" layoutY="120.0" prefHeight="16.0" prefWidth="300.0" />
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="73.0" layoutY="186.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Skeletize" textFill="#eeeaea" />
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture" />
+            <JFXButton layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <Label layoutX="494.0" layoutY="57.0" prefHeight="31.0" prefWidth="114.0" text="Bourage" />
+            <JFXRadioButton layoutX="478.0" layoutY="91.0" text="With Zeroes" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="118.0" text="Symetric" textFill="#252424" />
+            <JFXRadioButton layoutX="478.0" layoutY="145.0" text="Circular Symetric " textFill="#252424" />
+            <Label layoutX="493.0" layoutY="163.0" prefHeight="31.0" prefWidth="143.0" text="Structuring Element">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="194.0" prefHeight="16.0" prefWidth="42.0" text="Order" />
+            <JFXSlider layoutX="538.0" layoutY="195.0" max="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_mcq" layoutX="224.0" layoutY="49.0" prefHeight="584.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="19.0" prefWidth="131.0" text="MCQS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Skeletize" textFill="#eeeaea" />
+            <JFXButton layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <JFXRadioButton layoutX="55.0" layoutY="106.0" text="Circular Symetric " textFill="#252424" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_test" layoutX="222.0" layoutY="53.0" prefHeight="584.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="19.0" prefWidth="157.0" text="Knowledge Tests">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="57.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds" />
+            <JFXButton layoutX="72.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Skeletize" textFill="#eeeaea" />
+            <JFXButton layoutX="405.0" layoutY="496.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+            <JFXRadioButton layoutX="55.0" layoutY="106.0" text="Circular Symetric " textFill="#252424" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_bina" layoutX="224.0" layoutY="50.0" prefHeight="558.0" prefWidth="727.0">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="16.0" prefWidth="114.0" text="Binarisation">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="47.0" prefHeight="31.0" prefWidth="265.0" text="Thresholds">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <JFXSlider fx:id="bina_level1" layoutX="165.0" layoutY="87.0" max="255.0" prefHeight="16.0" prefWidth="300.0" showTickLabels="true" showTickMarks="true" value="75.0" />
+            <Label layoutX="72.0" layoutY="88.0" prefHeight="16.0" prefWidth="83.0" text="Level 1" />
+            <JFXSlider fx:id="bina_level2" layoutX="165.0" layoutY="135.0" max="255.0" prefHeight="16.0" prefWidth="300.0" showTickLabels="true" showTickMarks="true" value="225.0" />
+            <Label layoutX="72.0" layoutY="134.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <ImageView fx:id="bina_img1" fitHeight="218.0" fitWidth="288.0" layoutX="69.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bina_img2" fitHeight="218.0" fitWidth="232.0" layoutX="401.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/empty.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="bina_choose" layoutX="73.0" layoutY="186.0" onAction="#choosePhoto" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Choose" textFill="#eeeaea" />
+            <JFXButton fx:id="bina_op" layoutX="72.0" layoutY="499.0" onAction="#processImage" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Binarise" textFill="#eeeaea" />
+            <Label layoutX="71.0" layoutY="154.0" prefHeight="31.0" prefWidth="114.0" text="Choose Picture">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <JFXButton fx:id="bina_save" layoutX="405.0" layoutY="499.0" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #2196F3;" text="Save" textFill="#eeeaea" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_home" layoutX="222.0" layoutY="52.0" prefHeight="584.0" prefWidth="727.0" visible="false">
+         <children>
+            <Label layoutX="307.0" layoutY="14.0" prefHeight="16.0" prefWidth="114.0" text="Welcome">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="120.0" prefHeight="16.0" prefWidth="83.0" text="Level 2" />
+            <FontAwesomeIconView fill="#f2eeee" glyphName="IMAGE" layoutX="85.0" layoutY="207.0" />
+            <FontAwesomeIconView fill="#f2ecec" glyphName="SAVE" layoutX="424.0" layoutY="517.0" />
+            <FontAwesomeIconView fill="#e8e1e1" glyphName="TH" layoutX="81.0" layoutY="520.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
